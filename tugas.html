@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Himawan Wisnu P. 2SE3-->
+<head>
+    <title>Student Registration</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1> <hr> 
+    <form action="#" method="post">
+        <label>Firstname:</label><br>
+        <input type="text" placeholder="Firstname" size="25" required><br>
+        <label>Lastname:</label><br>
+        <input type="text" placeholder="Lastname" size="25" required><br><br>
+
+        <label>Program:</label>
+        <select name="Program" style="background: #f1f1f1; padding: 4px;">
+            <option value="Program">Program</option>
+            <option value="TI">TI</option>
+            <option value="TIES">TIES</option>
+            <option value="DCM">DCM</option>
+        </select><br><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other <br><br>
+
+        <label>Phone:</label>
+        <input type="tel" value="+62" size="2" placeholder="country code">
+        <input type="tel" size="11" placeholder="Phone no." required><br><br>
+
+        <label>Current Address:</label><br>
+        <textarea name="current address" cols="26" rows="5" placeholder="Current Address"></textarea><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter Email" size="25" required><br>
+
+        <label>Password:</label><br>
+        <input type="password" placeholder="Enter Password" 
+        pattern="(?=(?:[^a-zA-Z]*[a-zA-Z]){5})(?=(?:\D*\d){2})(?=.*[@#$%&]).*" size="25" required> <br>
+
+        <label>Reenter Password:</label><br>
+        <input type="password" placeholder="Enter Password"
+        pattern="(?=(?:[^a-zA-Z]*[a-zA-Z]){5})(?=(?:\D*\d){2})(?=.*[@#$%&]).*" size="25" required> <br> <br>
+
+        <button type="submit" class="btn">Register</button>
+    </form>
+</body>
+</html>
